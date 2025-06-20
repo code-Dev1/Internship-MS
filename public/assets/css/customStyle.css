@@ -1,0 +1,8 @@
+.header-img {
+    background-image: url("../media/auth/bg7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.ck-content * {
+    color: #000 !important;
+}

@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'company' => 'شرکت ',
+    'companies' => 'شرکت ها',
+    'add_company' => 'افزودن شرکت',
+    'update_company' => 'بروزرسانی شرکت',
+    'dashboard' => 'داشبورد',
+    'internship' => 'کارآموزی',
+    'internships' => 'کارآموزی ها',
+    'add_internship' => 'افزودن کارآموزی',
+    'update_internship' => 'بروزرسانی کارآموزی',
+    'application' => 'درخواست',
+    'users' => 'کاربران',
+    'user' => 'کاربر',
+    'add_user' => 'افزودن کاربر',
+    'update_user' => 'بروزرسانی کاربر',
+    'lang' => 'زبان',
+    'english' => 'انگلیسی',
+    'dari' => 'دری',
+    'pashto' => 'پشتو',
+    'new_student' => 'کارآموان جدید',
+    'totle_student' => 'مجموع کارآموزان',
+    'totle_company' => 'مجموع شرکت ها',
+    'avaliable_internship' => 'کارآموزی ها قابل دسرس',
+    'account_settings' => 'تنظیمات حساب',
+    'sign_out' => 'خارج شدن از حساب',
+    'light' => 'روشن',
+    'dark' => 'تیره',
+    'system' => 'مطابق سیستم',
+    'setting' => 'تنظیمات'
+];
