@@ -1,6 +1,11 @@
 @php
+<<<<<<< HEAD
     if (auth()->user()->role === "student") {
         return redirect()->route("home");
+=======
+    if (auth()->user()->role === 'student') {
+        return redirect()->route('home');
+>>>>>>> ad21565293a70044879b58ab69709a41ecb4ab33
     }
 @endphp
 <!DOCTYPE html>

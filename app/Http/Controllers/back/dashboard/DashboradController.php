@@ -23,7 +23,9 @@ class DashboradController extends Controller
 
 
         $company = Company::count('id');
+        if ($company === 1) {
 
+<<<<<<< HEAD
         if($company === 1){
 
             
@@ -31,11 +33,22 @@ class DashboradController extends Controller
                 
                 $id = Auth::user()->company->id;
                 
+=======
+
+            if (Auth::user()->role === 'company') {
+
+                $id = Auth::user()->company->id;
+
+>>>>>>> ad21565293a70044879b58ab69709a41ecb4ab33
                 $apps = Application::where('company_id', $id)->orderBy('id', 'desc')->limit(10)->get();
             } else {
                 $apps = Application::orderBy('id', 'desc')->limit(10)->get();
             }
+<<<<<<< HEAD
         }else{
+=======
+        } else {
+>>>>>>> ad21565293a70044879b58ab69709a41ecb4ab33
             $apps = [];
         }
 
