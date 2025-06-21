@@ -1,3 +1,8 @@
+@php
+    if (auth()->user()->role === "student") {
+        return redirect()->route("home");
+    }
+@endphp
 <!DOCTYPE html>
 <html dir={{ Session::get('direction', 'ltr') }}>
 <!--begin::Head-->

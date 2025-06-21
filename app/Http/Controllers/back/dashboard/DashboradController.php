@@ -24,13 +24,19 @@ class DashboradController extends Controller
 
         $company = Company::count('id');
 
-        if (Auth::user()->role === 'company') {
+        if($company === 1){
 
-            $id = Auth::user()->company->id;
-
-            $apps = Application::where('company_id', $id)->orderBy('id', 'desc')->limit(10)->get();
-        } else {
-            $apps = Application::orderBy('id', 'desc')->limit(10)->get();
+            
+            if (Auth::user()->role === 'company') {
+                
+                $id = Auth::user()->company->id;
+                
+                $apps = Application::where('company_id', $id)->orderBy('id', 'desc')->limit(10)->get();
+            } else {
+                $apps = Application::orderBy('id', 'desc')->limit(10)->get();
+            }
+        }else{
+            $apps = [];
         }
 
         $avliableI = Internship::where('end_date', '>', today())->count('id');
